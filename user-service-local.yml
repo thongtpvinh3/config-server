@@ -1,0 +1,9 @@
+app:
+  security:
+    auth-header-key: Authorization
+    token-type: Bearer
+    jwt:
+      secret-key : change_me
+      expiration: 60 # Minute
+      issuer-name: ${spring.application.name}
+  string-check: TND-LOCAL
